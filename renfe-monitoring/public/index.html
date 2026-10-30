@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vía Libre · Monitor Renfe</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Vía Libre</h1>
+      <div class="stats">
+        <span id="total">–</span> trenes · 
+        <span id="updated">actualizando…</span>
+      </div>
+    </header>
+
+    <div class="main">
+      <div id="map"></div>
+      <aside id="sidebar">
+        <h2>Trenes activos</h2>
+        <div id="train-list"></div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
